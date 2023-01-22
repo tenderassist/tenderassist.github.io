@@ -40,11 +40,12 @@
         <p>Please select the temp you would like to delete from the list below below</p>
         <br>
         <!--Use the array to populate a dropdown list of the temps-->
-        <label for="lbltempdel">Temps:</label>
-        <select id="templistdel" onload="dropdowntemp()">
-            <option value="No one">Select Temp</option>
-        </select>
-
+        <label for="lbltempdel">Temps Name:</label>
+        <input type="text" id="tempdelname" placeholder="Enter First Name">
+        <br><br>
+        <label for="lbltempsurnamedel">Temps Surname:</label>
+        <input type="text" id="tempdelsurname" placeholder="Enter Surname">
+        <br><br>
         <p name="feedback" id="deletetempreturn"></p>
 
         <button onclick="DeleteTemp()">Delete Temp</button>

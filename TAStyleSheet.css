@@ -153,3 +153,8 @@ address {
     address a {
         color: #00d0ff;
     }
+
+img {
+    height: 65px;
+    width: 65px;
+}
