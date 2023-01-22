@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>TA/Delete Temp</title>
+    <link href="TAStyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>"TenderAssist"</h1>
+
+    <!--Navigation bar-->
+    <div style="text-align: center;">
+        <nav>
+            <ul>
+                <li><a href="admin_home.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="active" href="javascript:void(0)" class="dropbtn">Edit Temps</a>
+                    <div class="dropdown-content">
+                        <a href="addtemp.html">Add Temps</a>
+                        <a href="deletetemp.html">Delete Temps</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Edit Boxes/Specials</a>
+                    <div class="dropdown-content">
+                        <a href="addbox.html">Add Boxes/Specials</a>
+                        <a href="deletebox.html">Delete Boxes/Specials</a>
+                    </div>
+                </li>
+                <li><a href="editoffice.html">Edit Offices</a></li>
+                <li><a href="contact.html">Contact Info</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div style="text-align: center;">
+        <h2>Delete Temps</h2>
+        <p>Please select the temp you would like to delete from the list below below</p>
+        <br>
+        <!--Use the array to populate a dropdown list of the temps-->
+        <label for="lbltempdel">Temps:</label>
+        <select id="templistdel" onload="dropdowntemp()">
+            <option value="No one">Select Temp</option>
+        </select>
+
+        <p name="feedback" id="deletetempreturn"></p>
+
+        <button onclick="DeleteTemp()">Delete Temp</button>
+    </div>
+
+    <script src="Script1.js"></script>
+</body>
+</html>

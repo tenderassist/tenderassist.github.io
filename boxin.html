@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>TA/Box In</title>
+    <link href="TAStyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>"TenderAssist"</h1>
+
+    <div style="text-align: center;">
+        <nav>
+            <ul>
+                <li><a href="user_home.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="active" href="javascript:void(0)" class="dropbtn">Boxes In/Out</a>
+                    <div class="dropdown-content">
+                        <a href="boxin.html">Boxes In</a>
+                        <a href="boxout.html">Boxes Out</a>
+                    </div>
+                </li>
+                <li><a href="searchbox.html">Search Boxes</a></li>
+                <li><a href="officesearch.html">Office Search</a></li>
+                <li><a href="checkoutstanding.html">Check Outstanding</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div style="text-align: center;">
+        <h2>Boxes/Specials Coming In</h2>
+        <p>Please fill in the information below</p>
+        <br>
+        <label for="lblboxinoff">Office ID:</label>
+        <input type="text" id="boxinoffid" name="boxinoffid" required>
+        <br><br>
+        <label for="lblIn1">Box 1:</label>
+        <input type="number" id="boxin1" name="boxin1">
+        <br><br>
+        <label for="lblIn2">Box 2:</label>
+        <input type="number" id="boxin2" name="boxin2">
+        <br><br>
+        <label for="lblIn3">Box 3 (Optional):</label>
+        <input type="number" id="boxin3" name="boxin3">
+        <br><br>
+        <label for="lblSpecialIn">Special:</label>
+        <input type="number" id="specialin" name="specialin">
+        <br><br>
+        <p name="feedback" id="boxinreturn"></p>
+
+        <button onclick="CheckIn()">Submit</button>
+    </div>
+
+    <script src="Script1.js"></script>
+</body>
+</html>

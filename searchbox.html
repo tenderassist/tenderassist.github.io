@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>TA/Search Box</title>
+    <link href="TAStyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>"TenderAssist"</h1>
+
+    <div style="text-align: center;">
+        <nav>
+            <ul>
+                <li><a href="user_home.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Boxes In/Out</a>
+                    <div class="dropdown-content">
+                        <a href="boxin.html">Boxes In</a>
+                        <a href="boxout.html">Boxes Out</a>
+                    </div>
+                </li>
+                <li><a class="active" href="searchbox.html">Search Boxes</a></li>
+                <li><a href="officesearch.html">Office Search</a></li>
+                <li><a href="checkoutstanding.html">Check Outstanding</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div style="text-align: center;">
+        <h2>Search Boxes/Specials</h2>
+        <p>Please enter the required information below</p>
+        <br>
+        <label for="lblBoxorSpecial">Are you searching for a box or a special?:</label>
+        <select name="boxspecial" id="boxspecial">
+            <option value="box">Box</option>
+            <option value="special">Special</option>
+        </select>
+        <br><br>
+        <label for="lblboxsearch">Box/Special Number:</label>
+        <input type="number" id="boxnumsearch" name="boxnumsearch">
+        <br><br>
+        <p name="feedback" id="searchboxreturn"></p>
+
+        <button onclick="BoxSearch()">Search</button>
+    </div>
+
+    <script src="Script1.js"></script>
+</body>
+</html>

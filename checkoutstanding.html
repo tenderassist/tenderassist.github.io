@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>TA/Check Outstanding</title>
+    <link href="TAStyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>"TenderAssist"</h1>
+
+    <div style="text-align: center;">
+        <nav>
+            <ul>
+                <li><a href="user_home.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Boxes In/Out</a>
+                    <div class="dropdown-content">
+                        <a href="boxin.html">Boxes In</a>
+                        <a href="boxout.html">Boxes Out</a>
+                    </div>
+                </li>
+                <li><a href="searchbox.html">Search Boxes</a></li>
+                <li><a href="officesearch.html">Office Search</a></li>
+                <li><a class="active" href="checkoutstanding.html">Check Outstanding</a></li> 
+            </ul>
+        </nav>
+    </div>
+
+    <div style="text-align: center;">
+        <h2>Check Outstanding Boxes/Specials</h2>
+        <p>Please click the button below to check if there are any boxes/specials that have not been returned yet</p>
+        <br>
+        <p>Outstanding boxes (Office): </p>
+        <p name="feedback" id="outstandingboxreturn"></p>
+        <br>
+        <p>Outstanding Specials (Office): </p>
+        <p name="feedback" id="outstandingspecreturn"></p>
+
+        <br><br>
+        <button onclick="Outstanding()">Search</button>
+    </div>
+
+    <script src="Script1.js"></script>
+</body>
+</html>
