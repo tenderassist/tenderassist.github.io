@@ -6,7 +6,7 @@ const logusers = [
     { logusername: "admin", logpassword: "admin2023" },
     { logusername: "user", logpassword: "user2023" }];
 
-/*const temps = [];
+const temps = [];
 
 localStorage.setItem('temps', JSON.stringify(temps));
 console.log(localStorage.getItem('temps'));
@@ -27,7 +27,7 @@ const officeinfo = [
     { compid: "", offnum: "", offcomp: "", offdateadded: "", offlastchecked: "" }];
 
 localStorage.setItem('officeinfo', JSON.stringify(officeinfo));
-console.log(localStorage.getItem('office'));*/
+console.log(localStorage.getItem('office'));
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
 //USER MODE
 //Index.html DOUBLE CHECK
